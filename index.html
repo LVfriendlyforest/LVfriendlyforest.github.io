@@ -158,6 +158,276 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-使用GitHub-Hexo搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/30/%E4%BD%BF%E7%94%A8GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用GitHub + Hexo搭建个人博客</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/30/%E4%BD%BF%E7%94%A8GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2020-03-29T18:20:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- toc -->
+
+<ul>
+<li><a href="#1-准备环境httpsimchenwaycom20191112使用github-hexo搭建个人博客1-zhun-bei-huan-jing">1. 准备环境[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#1-zhun-bei-huan-jing)</a></li>
+<li><a href="#2-安装hexohttpsimchenwaycom20191112使用github-hexo搭建个人博客2-an-zhuang-hexo">2. 安装Hexo[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#2-an-zhuang-hexo)</a><ul>
+<li><a href="#21-执行以下命令安装hexohttpsimchenwaycom20191112使用github-hexo搭建个人博客2-1-zhi-xing-yi-xia-ming-ling-an-zhuang-hexo">2.1. 执行以下命令安装Hexo[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#2-1-zhi-xing-yi-xia-ming-ling-an-zhuang-hexo)</a></li>
+<li><a href="#22-初始化httpsimchenwaycom20191112使用github-hexo搭建个人博客2-2-chu-shi-hua">2.2. 初始化[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#2-2-chu-shi-hua)</a></li>
+<li><a href="#23-初始化后的目录为httpsimchenwaycom20191112使用github-hexo搭建个人博客2-3-chu-shi-hua-hou-de-mu-lu-wei">2.3. 初始化后的目录为[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#2-3-chu-shi-hua-hou-de-mu-lu-wei)</a></li>
+<li><a href="#24-执行以下命令查看效果s-是server的缩写浏览器输入就可以预览效果了-httpsimchenwaycom20191112使用github-hexo搭建个人博客2-4-zhi-xing-yi-xia-ming-ling-cha-kan-xiao-guo-s-shi-server-de-suo-xie-liu-lan-qi-shu-ru-http-localhost-4000-jiu-ke-yi-yu-lan-xiao-guo-liao">2.4. 执行以下命令查看效果,s 是<code>server</code>的缩写，浏览器输入就可以预览效果了。[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#2-4-zhi-xing-yi-xia-ming-ling-cha-kan-xiao-guo-s-shi-server-de-suo-xie-liu-lan-qi-shu-ru-http-localhost-4000-jiu-ke-yi-yu-lan-xiao-guo-liao)</a></li>
+</ul>
+</li>
+<li><a href="#3-创建github-pageshttpsimchenwaycom20191112使用github-hexo搭建个人博客3-chuang-jian-github-pages">3. 创建GitHub Pages[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#3-chuang-jian-github-pages)</a><ul>
+<li><a href="#31-创建httpsimchenwaycom20191112使用github-hexo搭建个人博客3-1-chuang-jian-repository">3.1. 创建[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#3-1-chuang-jian-repository)</a></li>
+<li><a href="#32-clone-the-repositoryhttpsimchenwaycom20191112使用github-hexo搭建个人博客3-2-clone-the-repository">3.2. Clone the repository[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#3-2-clone-the-repository)</a></li>
+<li><a href="#33-hello-worldhttpsimchenwaycom20191112使用github-hexo搭建个人博客3-3-hello-world">3.3. Hello World[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#3-3-hello-world)</a></li>
+<li><a href="#34-push-ithttpsimchenwaycom20191112使用github-hexo搭建个人博客3-4-push-it">3.4. Push it[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#3-4-push-it)</a></li>
+<li><a href="#35-settings配置httpsimchenwaycom20191112使用github-hexo搭建个人博客3-5-settings-pei-zhi">3.5. Settings配置[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#3-5-settings-pei-zhi)</a></li>
+<li><a href="#36-此时访问即可看到效果httpsimchenwaycom20191112使用github-hexo搭建个人博客3-6-ci-shi-fang-wen-https-imchenway-github-io-ji-ke-kan-dao-xiao-guo">3.6. 此时访问即可看到效果[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#3-6-ci-shi-fang-wen-https-imchenway-github-io-ji-ke-kan-dao-xiao-guo)</a></li>
+</ul>
+</li>
+<li><a href="#4-将hexo部署到githubhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-jiang-hexo-bu-shu-dao-github">4. 将Hexo部署到Github[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-jiang-hexo-bu-shu-dao-github)</a><ul>
+<li><a href="#41-配置ssh-keyhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-pei-zhi-ssh-key">4.1 配置SSH key[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-1-pei-zhi-ssh-key)</a><ul>
+<li><a href="#411-测试ssh-keyhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-1-ce-shi-ssh-key">4.1.1. 测试SSH key[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-1-1-ce-shi-ssh-key)</a></li>
+<li><a href="#412-如果之前没有创建则执行以下命令全局配置一下本地账户httpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-2-ru-guo-zhi-qian-mei-you-chuang-jian-ze-zhi-xing-yi-xia-ming-ling-quan-ju-pei-zhi-yi-xia-ben-di-zhang-hu">4.1.2. 如果之前没有创建，则执行以下命令全局配置一下本地账户：[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-1-2-ru-guo-zhi-qian-mei-you-chuang-jian-ze-zhi-xing-yi-xia-ming-ling-quan-ju-pei-zhi-yi-xia-ben-di-zhang-hu)</a></li>
+<li><a href="#413-然后开始生成密钥-ssh-keyhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-3-ran-hou-kai-shi-sheng-cheng-mi-yao-ssh-key">4.1.3. 然后开始生成密钥 SSH key[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-1-3-ran-hou-kai-shi-sheng-cheng-mi-yao-ssh-key)</a></li>
+<li><a href="#414-首次使用还需要确认并添加主机到本机ssh可信列表httpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-4-shou-ci-shi-yong-huan-xu-yao-que-ren-bing-tian-jia-zhu-ji-dao-ben-ji-ssh-ke-xin-lie-biao">4.1.4. 首次使用还需要确认并添加主机到本机SSH可信列表[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-1-4-shou-ci-shi-yong-huan-xu-yao-que-ren-bing-tian-jia-zhu-ji-dao-ben-ji-ssh-ke-xin-lie-biao)</a></li>
+<li><a href="#415-github-上添加刚刚生成的ssh-key按以下步骤添加httpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-5-github-shang-tian-jia-gang-gang-sheng-cheng-de-ssh-key-an-yi-xia-bu-zou-tian-jia">4.1.5. Github 上添加刚刚生成的SSH key，按以下步骤添加：[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-1-5-github-shang-tian-jia-gang-gang-sheng-cheng-de-ssh-key-an-yi-xia-bu-zou-tian-jia)</a></li>
+</ul>
+</li>
+<li><a href="#42-hexo部署到githubhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-hexo-bu-shu-dao-github">4.2 Hexo部署到GitHub[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-2-hexo-bu-shu-dao-github)</a><ul>
+<li><a href="#421-进入hexo初始化的目录imchenwaycom下修改_configyml中的deploy配置httpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-1-jin-ru-hexo-chu-shi-hua-de-mu-lu-imchenway-com-xia-xiu-gai-config-yml-zhong-de-deploy-pei-zhi">4.2.1. 进入Hexo初始化的目录<code>imchenway.com</code>下,修改<code>_config.yml</code>中的deploy配置[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-2-1-jin-ru-hexo-chu-shi-hua-de-mu-lu-imchenway-com-xia-xiu-gai-config-yml-zhong-de-deploy-pei-zhi)</a></li>
+<li><a href="#422-安装部署插件httpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-2-an-zhuang-bu-shu-cha-jian">4.2.2. 安装部署插件[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-2-2-an-zhuang-bu-shu-cha-jian)</a></li>
+<li><a href="#423-执行部署命令g-generated-deployhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-3-zhi-xing-bu-shu-ming-ling-g-generate-d-deploy">4.2.3. 执行部署命令,g = generate,d = deploy[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-2-3-zhi-xing-bu-shu-ming-ling-g-generate-d-deploy)</a></li>
+<li><a href="#424-访问查看效果httpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-4-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo">4.2.4. 访问查看效果[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#4-2-4-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#5-发表博文httpsimchenwaycom20191112使用github-hexo搭建个人博客5-fa-biao-bo-wen">5. 发表博文[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#5-fa-biao-bo-wen)</a><ul>
+<li><a href="#51-创建新的博文httpsimchenwaycom20191112使用github-hexo搭建个人博客5-1-chuang-jian-xin-de-bo-wen">5.1. 创建新的博文[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#5-1-chuang-jian-xin-de-bo-wen)</a></li>
+<li><a href="#52-本地测试httpsimchenwaycom20191112使用github-hexo搭建个人博客5-2-ben-di-ce-shi">5.2. 本地测试[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#5-2-ben-di-ce-shi)</a></li>
+<li><a href="#53-重新部署到github访问查看效果httpsimchenwaycom20191112使用github-hexo搭建个人博客5-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo">5.3. 重新部署到GitHub,访问查看效果[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#5-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo)</a></li>
+</ul>
+</li>
+<li><a href="#6-更换主题httpsimchenwaycom20191112使用github-hexo搭建个人博客6-geng-huan-zhu-ti">6. 更换主题[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#6-geng-huan-zhu-ti)</a><ul>
+<li><a href="#61-终端执行httpsimchenwaycom20191112使用github-hexo搭建个人博客6-1-zhong-duan-zhi-xing">6.1. 终端执行[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#6-1-zhong-duan-zhi-xing)</a></li>
+<li><a href="#62修改_configymlhttpsimchenwaycom20191112使用github-hexo搭建个人博客6-2-xiu-gai-config-yml">6.2.修改<code>_config.yml</code>[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#6-2-xiu-gai-config-yml)</a></li>
+<li><a href="#63-重新部署到github访问查看效果httpsimchenwaycom20191112使用github-hexo搭建个人博客6-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo">6.3. 重新部署到GitHub,访问查看效果[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#6-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo)</a></li>
+</ul>
+</li>
+<li><a href="#7-hexo备份httpsimchenwaycom20191112使用github-hexo搭建个人博客7-hexo-bei-fen">7. hexo备份[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#7-hexo-bei-fen)</a><ul>
+<li><a href="#71-安装备份插件httpsimchenwaycom20191112使用github-hexo搭建个人博客7-1-an-zhuang-bei-fen-cha-jian">7.1 安装备份插件[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#7-1-an-zhuang-bei-fen-cha-jian)</a></li>
+<li><a href="#72-恢复博客httpsimchenwaycom20191112使用github-hexo搭建个人博客7-2-hui-fu-bo-ke">7.2 恢复博客[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#7-2-hui-fu-bo-ke)</a></li>
+</ul>
+</li>
+<li><a href="#8-开启toc支持httpsimchenwaycom20191112使用github-hexo搭建个人博客8-kai-qi-toc-zhi-chi">8. 开启TOC支持[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#8-kai-qi-toc-zhi-chi)</a></li>
+<li><a href="#9-文章标题区分大小写httpsimchenwaycom20191112使用github-hexo搭建个人博客9-wen-zhang-biao-ti-qu-fen-da-xiao-xie">9. 文章标题区分大小写[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#9-wen-zhang-biao-ti-qu-fen-da-xiao-xie)</a></li>
+<li><a href="#10-集成gitalkhttpsimchenwaycom20191112使用github-hexo搭建个人博客10-ji-cheng-gitalk">10. 集成Gitalk[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#10-ji-cheng-gitalk)</a></li>
+<li><a href="#10-集成百度统计httpsimchenwaycom20191112使用github-hexo搭建个人博客10-ji-cheng-bai-du-tong-ji">10. 集成百度统计[#](https://imchenway.com/2019/11/12/使用GitHub + Hexo搭建个人博客/#10-ji-cheng-bai-du-tong-ji)</a></li>
+</ul>
+<!-- tocstop -->
+
+<h1><span id="1-准备环境httpsimchenwaycom20191112使用github-hexo搭建个人博客1-zhun-bei-huan-jing">1. 准备环境[#]( + Hexo搭建个人博客/#1-zhun-bei-huan-jing)</span></h1><ul>
+<li><code>node.js</code></li>
+<li><code>git</code></li>
+<li><code>npm</code></li>
+</ul>
+<h1><span id="2-安装hexohttpsimchenwaycom20191112使用github-hexo搭建个人博客2-an-zhuang-hexo">2. 安装Hexo[#]( + Hexo搭建个人博客/#2-an-zhuang-hexo)</span></h1><h3><span id="21-执行以下命令安装hexohttpsimchenwaycom20191112使用github-hexo搭建个人博客2-1-zhi-xing-yi-xia-ming-ling-an-zhuang-hexo">2.1. 执行以下命令安装Hexo[#]( + Hexo搭建个人博客/#2-1-zhi-xing-yi-xia-ming-ling-an-zhuang-hexo)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h3><span id="22-初始化httpsimchenwaycom20191112使用github-hexo搭建个人博客2-2-chu-shi-hua">2.2. 初始化[#]( + Hexo搭建个人博客/#2-2-chu-shi-hua)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init imchenway.com</span><br><span class="line">cd imchenway.com</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<h3><span id="23-初始化后的目录为httpsimchenwaycom20191112使用github-hexo搭建个人博客2-3-chu-shi-hua-hou-de-mu-lu-wei">2.3. 初始化后的目录为[#]( + Hexo搭建个人博客/#2-3-chu-shi-hua-hou-de-mu-lu-wei)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml # 网站的配置信息，您可以在此配置大部分的参数。 </span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds # 模版文件夹</span><br><span class="line">├── source  # 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者文件夹不会被编译打包到public文件夹</span><br><span class="line">|   ├── _drafts # 草稿文件</span><br><span class="line">|   └── _posts # 文章Markdowm文件 </span><br><span class="line">└── themes  # 主题文件夹</span><br></pre></td></tr></table></figure>
+
+<h3><span id="24-执行以下命令查看效果s-是server的缩写浏览器输入就可以预览效果了-httpsimchenwaycom20191112使用github-hexo搭建个人博客2-4-zhi-xing-yi-xia-ming-ling-cha-kan-xiao-guo-s-shi-server-de-suo-xie-liu-lan-qi-shu-ru-http-localhost-4000-jiu-ke-yi-yu-lan-xiao-guo-liao">2.4. 执行以下命令查看效果,s 是<code>server</code>的缩写，浏览器输入就可以预览效果了。[#]( + Hexo搭建个人博客/#2-4-zhi-xing-yi-xia-ming-ling-cha-kan-xiao-guo-s-shi-server-de-suo-xie-liu-lan-qi-shu-ru-http-localhost-4000-jiu-ke-yi-yu-lan-xiao-guo-liao)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h1><span id="3-创建github-pageshttpsimchenwaycom20191112使用github-hexo搭建个人博客3-chuang-jian-github-pages">3. 创建GitHub Pages[#]( + Hexo搭建个人博客/#3-chuang-jian-github-pages)</span></h1><h3><span id="31-创建httpsimchenwaycom20191112使用github-hexo搭建个人博客3-1-chuang-jian-repository">3.1. 创建[#]( + Hexo搭建个人博客/#3-1-chuang-jian-repository)</span></h3><p><img src="../../../myhexo/source/images/006y8mN6gy1g8vgepn3x9j30tw0mjdme-1585506203393.jpg" alt="img"></p>
+<h3><span id="32-clone-the-repositoryhttpsimchenwaycom20191112使用github-hexo搭建个人博客3-2-clone-the-repository">3.2. Clone the repository[#]( + Hexo搭建个人博客/#3-2-clone-the-repository)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;imchenway&#x2F;imchenway.github.io.git</span><br></pre></td></tr></table></figure>
+
+<h3><span id="33-hello-worldhttpsimchenwaycom20191112使用github-hexo搭建个人博客3-3-hello-world">3.3. Hello World[#]( + Hexo搭建个人博客/#3-3-hello-world)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd username.github.io</span><br><span class="line"></span><br><span class="line">echo &quot;Hello World&quot; &gt; index.html</span><br></pre></td></tr></table></figure>
+
+<h3><span id="34-push-ithttpsimchenwaycom20191112使用github-hexo搭建个人博客3-4-push-it">3.4. Push it[#]( + Hexo搭建个人博客/#3-4-push-it)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add --all</span><br><span class="line"></span><br><span class="line">git commit -m &quot;Initial commit&quot;</span><br><span class="line"></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+<h3><span id="35-settings配置httpsimchenwaycom20191112使用github-hexo搭建个人博客3-5-settings-pei-zhi">3.5. Settings配置[#]( + Hexo搭建个人博客/#3-5-settings-pei-zhi)</span></h3><ul>
+<li>source中选中自己的master分支<br><img src="../../../myhexo/source/images/006y8mN6gy1g8vgjj4p8fj30rq0423zz-1585506203413.jpg" alt="img"><br><img src="../../../myhexo/source/images/006y8mN6gy1g8vgks8f4yj30pq0gsdlp-1585506203416.jpg" alt="img"></li>
+</ul>
+<h3><span id="36-此时访问即可看到效果httpsimchenwaycom20191112使用github-hexo搭建个人博客3-6-ci-shi-fang-wen-https-imchenway-github-io-ji-ke-kan-dao-xiao-guo">3.6. 此时访问即可看到效果[#]( + Hexo搭建个人博客/#3-6-ci-shi-fang-wen-https-imchenway-github-io-ji-ke-kan-dao-xiao-guo)</span></h3><h1><span id="4-将hexo部署到githubhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-jiang-hexo-bu-shu-dao-github">4. 将Hexo部署到Github[#]( + Hexo搭建个人博客/#4-jiang-hexo-bu-shu-dao-github)</span></h1><h3><span id="41-配置ssh-keyhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-pei-zhi-ssh-key">4.1 配置SSH key[#]( + Hexo搭建个人博客/#4-1-pei-zhi-ssh-key)</span></h3><h5><span id="411-测试ssh-keyhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-1-ce-shi-ssh-key">4.1.1. 测试SSH key[#]( + Hexo搭建个人博客/#4-1-1-ce-shi-ssh-key)</span></h5><ul>
+<li>命令行输入<code>cd ~/.ssh</code></li>
+<li>如果没报错或者提示什么的说明就是以前生成过的，直接使用<code>cat ~/.ssh/id_rsa.pub</code>命令查看本机上的<code>SSH key</code></li>
+</ul>
+<h5><span id="412-如果之前没有创建则执行以下命令全局配置一下本地账户httpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-2-ru-guo-zhi-qian-mei-you-chuang-jian-ze-zhi-xing-yi-xia-ming-ling-quan-ju-pei-zhi-yi-xia-ben-di-zhang-hu">4.1.2. 如果之前没有创建，则执行以下命令全局配置一下本地账户：[#]( + Hexo搭建个人博客/#4-1-2-ru-guo-zhi-qian-mei-you-chuang-jian-ze-zhi-xing-yi-xia-ming-ling-quan-ju-pei-zhi-yi-xia-ben-di-zhang-hu)</span></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;</span><br><span class="line">git config --global user.email &quot;邮箱地址&quot;</span><br></pre></td></tr></table></figure>
+
+<h5><span id="413-然后开始生成密钥-ssh-keyhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-3-ran-hou-kai-shi-sheng-cheng-mi-yao-ssh-key">4.1.3. 然后开始生成密钥 SSH key[#]( + Hexo搭建个人博客/#4-1-3-ran-hou-kai-shi-sheng-cheng-mi-yao-ssh-key)</span></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#39;上面的邮箱&#39;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>按照提示完成三次回车，即可生成<code>ssh key</code>。</li>
+<li>通过<code>cat ~/.ssh/id_rsa.pub</code>查看 <code>~/.ssh/id_rsa.pub</code> 文件内容，获取到你的<code>SSH key</code></li>
+</ul>
+<h5><span id="414-首次使用还需要确认并添加主机到本机ssh可信列表httpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-4-shou-ci-shi-yong-huan-xu-yao-que-ren-bing-tian-jia-zhu-ji-dao-ben-ji-ssh-ke-xin-lie-biao">4.1.4. 首次使用还需要确认并添加主机到本机SSH可信列表[#]( + Hexo搭建个人博客/#4-1-4-shou-ci-shi-yong-huan-xu-yao-que-ren-bing-tian-jia-zhu-ji-dao-ben-ji-ssh-ke-xin-lie-biao)</span></h5><ul>
+<li>若返回 Hi xxx! You’ve successfully authenticated, but</li>
+</ul>
+<p>  Git</p>
+<p>  Hub does not provide access. 内容，则证明添加成功。</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<h5><span id="415-github-上添加刚刚生成的ssh-key按以下步骤添加httpsimchenwaycom20191112使用github-hexo搭建个人博客4-1-5-github-shang-tian-jia-gang-gang-sheng-cheng-de-ssh-key-an-yi-xia-bu-zou-tian-jia">4.1.5. Github 上添加刚刚生成的SSH key，按以下步骤添加：[#]( + Hexo搭建个人博客/#4-1-5-github-shang-tian-jia-gang-gang-sheng-cheng-de-ssh-key-an-yi-xia-bu-zou-tian-jia)</span></h5><p><img src="../../../myhexo/source/images/006y8mN6gy1g8vgvddczmj31ac0f6qca-1585506203423.jpg" alt="img"></p>
+<h3><span id="42-hexo部署到githubhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-hexo-bu-shu-dao-github">4.2 Hexo部署到GitHub[#]( + Hexo搭建个人博客/#4-2-hexo-bu-shu-dao-github)</span></h3><h5><span id="421-进入hexo初始化的目录imchenwaycom下修改_configyml中的deploy配置httpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-1-jin-ru-hexo-chu-shi-hua-de-mu-lu-imchenway-com-xia-xiu-gai-config-yml-zhong-de-deploy-pei-zhi">4.2.1. 进入Hexo初始化的目录<code>imchenway.com</code>下,修改<code>_config.yml</code>中的deploy配置[#]( + Hexo搭建个人博客/#4-2-1-jin-ru-hexo-chu-shi-hua-de-mu-lu-imchenway-com-xia-xiu-gai-config-yml-zhong-de-deploy-pei-zhi)</span></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd imchenway.com</span><br><span class="line">vi _config.yml</span><br></pre></td></tr></table></figure>
+
+<p><img src="../../../myhexo/source/images/006y8mN6gy1g8vgzn6lidj30gu044q4a-1585506203433.jpg" alt="img"></p>
+<h5><span id="422-安装部署插件httpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-2-an-zhuang-bu-shu-cha-jian">4.2.2. 安装部署插件[#]( + Hexo搭建个人博客/#4-2-2-an-zhuang-bu-shu-cha-jian)</span></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h5><span id="423-执行部署命令g-generated-deployhttpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-3-zhi-xing-bu-shu-ming-ling-g-generate-d-deploy">4.2.3. 执行部署命令,g = generate,d = deploy[#]( + Hexo搭建个人博客/#4-2-3-zhi-xing-bu-shu-ming-ling-g-generate-d-deploy)</span></h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h5><span id="424-访问查看效果httpsimchenwaycom20191112使用github-hexo搭建个人博客4-2-4-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo">4.2.4. 访问查看效果[#]( + Hexo搭建个人博客/#4-2-4-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo)</span></h5><h1><span id="5-发表博文httpsimchenwaycom20191112使用github-hexo搭建个人博客5-fa-biao-bo-wen">5. 发表博文[#]( + Hexo搭建个人博客/#5-fa-biao-bo-wen)</span></h1><h3><span id="51-创建新的博文httpsimchenwaycom20191112使用github-hexo搭建个人博客5-1-chuang-jian-xin-de-bo-wen">5.1. 创建新的博文[#]( + Hexo搭建个人博客/#5-1-chuang-jian-xin-de-bo-wen)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &#39;博文标题&#39;</span><br></pre></td></tr></table></figure>
+
+<h3><span id="52-本地测试httpsimchenwaycom20191112使用github-hexo搭建个人博客5-2-ben-di-ce-shi">5.2. 本地测试[#]( + Hexo搭建个人博客/#5-2-ben-di-ce-shi)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h3><span id="53-重新部署到github访问查看效果httpsimchenwaycom20191112使用github-hexo搭建个人博客5-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo">5.3. 重新部署到GitHub,访问查看效果[#]( + Hexo搭建个人博客/#5-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h1><span id="6-更换主题httpsimchenwaycom20191112使用github-hexo搭建个人博客6-geng-huan-zhu-ti">6. 更换主题[#]( + Hexo搭建个人博客/#6-geng-huan-zhu-ti)</span></h1><h3><span id="61-终端执行httpsimchenwaycom20191112使用github-hexo搭建个人博客6-1-zhong-duan-zhi-xing">6.1. 终端执行[#]( + Hexo搭建个人博客/#6-1-zhong-duan-zhi-xing)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd imchenway.com</span><br><span class="line">cd themes</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;Ben02&#x2F;hexo-theme-Anatole.git anatole</span><br><span class="line">cd anatole</span><br><span class="line">git pull</span><br><span class="line">npm install --save hexo-render-pug hexo-generator-archive hexo-generator-tag hexo-generator-index hexo-generator-category</span><br></pre></td></tr></table></figure>
+
+<h3><span id="62修改_configymlhttpsimchenwaycom20191112使用github-hexo搭建个人博客6-2-xiu-gai-config-yml">6.2.修改<code>_config.yml</code>[#]( + Hexo搭建个人博客/#6-2-xiu-gai-config-yml)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># anatole</span><br><span class="line">archive_generator:</span><br><span class="line">    per_page: 0  </span><br><span class="line">    yearly: false</span><br><span class="line">    monthly: false</span><br><span class="line">    daily: false</span><br></pre></td></tr></table></figure>
+
+<p><img src="../../../myhexo/source/images/006y8mN6gy1g8virr42naj30pm0bkq7f-1585506203437.jpg" alt="img"></p>
+<h3><span id="63-重新部署到github访问查看效果httpsimchenwaycom20191112使用github-hexo搭建个人博客6-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo">6.3. 重新部署到GitHub,访问查看效果[#]( + Hexo搭建个人博客/#6-3-chong-xin-bu-shu-dao-github-fang-wen-https-imchenway-github-io-cha-kan-xiao-guo)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<h1><span id="7-hexo备份httpsimchenwaycom20191112使用github-hexo搭建个人博客7-hexo-bei-fen">7. hexo备份[#]( + Hexo搭建个人博客/#7-hexo-bei-fen)</span></h1><h3><span id="71-安装备份插件httpsimchenwaycom20191112使用github-hexo搭建个人博客7-1-an-zhuang-bei-fen-cha-jian">7.1 安装备份插件[#]( + Hexo搭建个人博客/#7-1-an-zhuang-bei-fen-cha-jian)</span></h3><ul>
+<li><p>终端执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-git-backup --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改根目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br></pre></td></tr></table></figure>
+
+<p>，添加如下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># theme：你要备份的主题名称</span><br><span class="line"># message：自定义提交信息</span><br><span class="line"># repository：仓库名，仓库地址添加一个分支名</span><br><span class="line">backup:</span><br><span class="line">  type: git</span><br><span class="line">  theme: anatole</span><br><span class="line">  message: Back up my imchenway.com blog</span><br><span class="line">  repository:</span><br><span class="line">    github: https:&#x2F;&#x2F;github.com&#x2F;imchenway&#x2F;imchenway.github.io.git,hexo</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在原GitHub.io项目下创建分支<code>hexo</code></p>
+</li>
+<li><p>终端执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo backup</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3><span id="72-恢复博客httpsimchenwaycom20191112使用github-hexo搭建个人博客7-2-hui-fu-bo-ke">7.2 恢复博客[#]( + Hexo搭建个人博客/#7-2-hui-fu-bo-ke)</span></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;imchenway&#x2F;imchenway.github.io.git</span><br><span class="line">npm install hexo-cli</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h1><span id="8-开启toc支持httpsimchenwaycom20191112使用github-hexo搭建个人博客8-kai-qi-toc-zhi-chi">8. 开启TOC支持[#]( + Hexo搭建个人博客/#8-kai-qi-toc-zhi-chi)</span></h1><ul>
+<li><p>安装插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-toc --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  maxdepth: 3</span><br><span class="line">  class: toc</span><br><span class="line">  slugify: transliteration</span><br><span class="line">  decodeEntities: false</span><br><span class="line">  anchor:</span><br><span class="line">    position: after</span><br><span class="line">    symbol: &#39;#&#39;</span><br><span class="line">    style: header-anchor</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文章中加入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1><span id="9-文章标题区分大小写httpsimchenwaycom20191112使用github-hexo搭建个人博客9-wen-zhang-biao-ti-qu-fen-da-xiao-xie">9. 文章标题区分大小写[#]( + Hexo搭建个人博客/#9-wen-zhang-biao-ti-qu-fen-da-xiao-xie)</span></h1><ul>
+<li>将主题文件夹<code>/source/css/</code>目录中的<code>.scss</code>文件里面的<code>text-transform: uppercase;</code>全去掉</li>
+</ul>
+<h1><span id="10-集成gitalkhttpsimchenwaycom20191112使用github-hexo搭建个人博客10-ji-cheng-gitalk">10. 集成Gitalk[#]( + Hexo搭建个人博客/#10-ji-cheng-gitalk)</span></h1><ul>
+<li><p>打开<code>hexo/themes/anatole/layout/partial/comments.pug</code>文件, 在文件末尾加入以下代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">if theme.gitalk</span><br><span class="line">    if theme.gitalk.enable &#x3D;&#x3D; true</span><br><span class="line">        link(rel&#x3D;&quot;stylesheet&quot;, href&#x3D;&#39;https:&#x2F;&#x2F;unpkg.com&#x2F;gitalk&#x2F;dist&#x2F;gitalk.css&#39;)</span><br><span class="line">        div(id&#x3D;&#39;gitalk-container&#39;)</span><br><span class="line">        script(src&#x3D;&quot;&#x2F;js&#x2F;md5.min.js&quot;)</span><br><span class="line">        script(src&#x3D;&#39;https:&#x2F;&#x2F;unpkg.com&#x2F;gitalk&#x2F;dist&#x2F;gitalk.min.js&#39;)</span><br><span class="line">        script.</span><br><span class="line">            var gitalk &#x3D; new Gitalk(&#123;</span><br><span class="line">                clientID: &#39;#&#123;theme.gitalk.clientID&#125;&#39;,</span><br><span class="line">                clientSecret: &#39;#&#123;theme.gitalk.clientSecret&#125;&#39;,</span><br><span class="line">                id: md5(location.pathname),</span><br><span class="line">                repo: &#39;#&#123;theme.gitalk.repo&#125;&#39;,</span><br><span class="line">                owner: &#39;#&#123;theme.gitalk.owner&#125;&#39;,</span><br><span class="line">             admin: &#39;#&#123;theme.gitalk.admin&#125;&#39;</span><br><span class="line">            &#125;)</span><br><span class="line">            gitalk.render(&#39;gitalk-container&#39;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 <code>/hexo/themes/anatole/source/js</code> 目录中新建文件 <code>md5.min.js</code> , 在其中加入如下内容:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">md5.min.js!function(n)&#123;&quot;use strict&quot;;function t(n,t)&#123;var r&#x3D;(65535&amp;n)+(65535&amp;t);return(n&gt;&gt;16)+(t&gt;&gt;16)+(r&gt;&gt;16)&lt;&lt;16|65535&amp;r&#125;function r(n,t)&#123;return n&lt;&lt;t|n&gt;&gt;&gt;32-t&#125;function e(n,e,o,u,c,f)&#123;return t(r(t(t(e,n),t(u,f)),c),o)&#125;function o(n,t,r,o,u,c,f)&#123;return e(t&amp;r|~t&amp;o,n,t,u,c,f)&#125;function u(n,t,r,o,u,c,f)&#123;return e(t&amp;o|r&amp;~o,n,t,u,c,f)&#125;function c(n,t,r,o,u,c,f)&#123;return e(t^r^o,n,t,u,c,f)&#125;function f(n,t,r,o,u,c,f)&#123;return e(r^(t|~o),n,t,u,c,f)&#125;function i(n,r)&#123;n[r&gt;&gt;5]|&#x3D;128&lt;&lt;r%32,n[14+(r+64&gt;&gt;&gt;9&lt;&lt;4)]&#x3D;r;var e,i,a,d,h,l&#x3D;1732584193,g&#x3D;-271733879,v&#x3D;-1732584194,m&#x3D;271733878;for(e&#x3D;0;e&lt;n.length;e+&#x3D;16)i&#x3D;l,a&#x3D;g,d&#x3D;v,h&#x3D;m,g&#x3D;f(g&#x3D;f(g&#x3D;f(g&#x3D;f(g&#x3D;c(g&#x3D;c(g&#x3D;c(g&#x3D;c(g&#x3D;u(g&#x3D;u(g&#x3D;u(g&#x3D;u(g&#x3D;o(g&#x3D;o(g&#x3D;o(g&#x3D;o(g,v&#x3D;o(v,m&#x3D;o(m,l&#x3D;o(l,g,v,m,n[e],7,-680876936),g,v,n[e+1],12,-389564586),l,g,n[e+2],17,606105819),m,l,n[e+3],22,-1044525330),v&#x3D;o(v,m&#x3D;o(m,l&#x3D;o(l,g,v,m,n[e+4],7,-176418897),g,v,n[e+5],12,1200080426),l,g,n[e+6],17,-1473231341),m,l,n[e+7],22,-45705983),v&#x3D;o(v,m&#x3D;o(m,l&#x3D;o(l,g,v,m,n[e+8],7,1770035416),g,v,n[e+9],12,-1958414417),l,g,n[e+10],17,-42063),m,l,n[e+11],22,-1990404162),v&#x3D;o(v,m&#x3D;o(m,l&#x3D;o(l,g,v,m,n[e+12],7,1804603682),g,v,n[e+13],12,-40341101),l,g,n[e+14],17,-1502002290),m,l,n[e+15],22,1236535329),v&#x3D;u(v,m&#x3D;u(m,l&#x3D;u(l,g,v,m,n[e+1],5,-165796510),g,v,n[e+6],9,-1069501632),l,g,n[e+11],14,643717713),m,l,n[e],20,-373897302),v&#x3D;u(v,m&#x3D;u(m,l&#x3D;u(l,g,v,m,n[e+5],5,-701558691),g,v,n[e+10],9,38016083),l,g,n[e+15],14,-660478335),m,l,n[e+4],20,-405537848),v&#x3D;u(v,m&#x3D;u(m,l&#x3D;u(l,g,v,m,n[e+9],5,568446438),g,v,n[e+14],9,-1019803690),l,g,n[e+3],14,-187363961),m,l,n[e+8],20,1163531501),v&#x3D;u(v,m&#x3D;u(m,l&#x3D;u(l,g,v,m,n[e+13],5,-1444681467),g,v,n[e+2],9,-51403784),l,g,n[e+7],14,1735328473),m,l,n[e+12],20,-1926607734),v&#x3D;c(v,m&#x3D;c(m,l&#x3D;c(l,g,v,m,n[e+5],4,-378558),g,v,n[e+8],11,-2022574463),l,g,n[e+11],16,1839030562),m,l,n[e+14],23,-35309556),v&#x3D;c(v,m&#x3D;c(m,l&#x3D;c(l,g,v,m,n[e+1],4,-1530992060),g,v,n[e+4],11,1272893353),l,g,n[e+7],16,-155497632),m,l,n[e+10],23,-1094730640),v&#x3D;c(v,m&#x3D;c(m,l&#x3D;c(l,g,v,m,n[e+13],4,681279174),g,v,n[e],11,-358537222),l,g,n[e+3],16,-722521979),m,l,n[e+6],23,76029189),v&#x3D;c(v,m&#x3D;c(m,l&#x3D;c(l,g,v,m,n[e+9],4,-640364487),g,v,n[e+12],11,-421815835),l,g,n[e+15],16,530742520),m,l,n[e+2],23,-995338651),v&#x3D;f(v,m&#x3D;f(m,l&#x3D;f(l,g,v,m,n[e],6,-198630844),g,v,n[e+7],10,1126891415),l,g,n[e+14],15,-1416354905),m,l,n[e+5],21,-57434055),v&#x3D;f(v,m&#x3D;f(m,l&#x3D;f(l,g,v,m,n[e+12],6,1700485571),g,v,n[e+3],10,-1894986606),l,g,n[e+10],15,-1051523),m,l,n[e+1],21,-2054922799),v&#x3D;f(v,m&#x3D;f(m,l&#x3D;f(l,g,v,m,n[e+8],6,1873313359),g,v,n[e+15],10,-30611744),l,g,n[e+6],15,-1560198380),m,l,n[e+13],21,1309151649),v&#x3D;f(v,m&#x3D;f(m,l&#x3D;f(l,g,v,m,n[e+4],6,-145523070),g,v,n[e+11],10,-1120210379),l,g,n[e+2],15,718787259),m,l,n[e+9],21,-343485551),l&#x3D;t(l,i),g&#x3D;t(g,a),v&#x3D;t(v,d),m&#x3D;t(m,h);return[l,g,v,m]&#125;function a(n)&#123;var t,r&#x3D;&quot;&quot;,e&#x3D;32*n.length;for(t&#x3D;0;t&lt;e;t+&#x3D;8)r+&#x3D;String.fromCharCode(n[t&gt;&gt;5]&gt;&gt;&gt;t%32&amp;255);return r&#125;function d(n)&#123;var t,r&#x3D;[];for(r[(n.length&gt;&gt;2)-1]&#x3D;void 0,t&#x3D;0;t&lt;r.length;t+&#x3D;1)r[t]&#x3D;0;var e&#x3D;8*n.length;for(t&#x3D;0;t&lt;e;t+&#x3D;8)r[t&gt;&gt;5]|&#x3D;(255&amp;n.charCodeAt(t&#x2F;8))&lt;&lt;t%32;return r&#125;function h(n)&#123;return a(i(d(n),8*n.length))&#125;function l(n,t)&#123;var r,e,o&#x3D;d(n),u&#x3D;[],c&#x3D;[];for(u[15]&#x3D;c[15]&#x3D;void 0,o.length&gt;16&amp;&amp;(o&#x3D;i(o,8*n.length)),r&#x3D;0;r&lt;16;r+&#x3D;1)u[r]&#x3D;909522486^o[r],c[r]&#x3D;1549556828^o[r];return e&#x3D;i(u.concat(d(t)),512+8*t.length),a(i(c.concat(e),640))&#125;function g(n)&#123;var t,r,e&#x3D;&quot;&quot;;for(r&#x3D;0;r&lt;n.length;r+&#x3D;1)t&#x3D;n.charCodeAt(r),e+&#x3D;&quot;0123456789abcdef&quot;.charAt(t&gt;&gt;&gt;4&amp;15)+&quot;0123456789abcdef&quot;.charAt(15&amp;t);return e&#125;function v(n)&#123;return unescape(encodeURIComponent(n))&#125;function m(n)&#123;return h(v(n))&#125;function p(n)&#123;return g(m(n))&#125;function s(n,t)&#123;return l(v(n),v(t))&#125;function C(n,t)&#123;return g(s(n,t))&#125;function A(n,t,r)&#123;return t?r?s(t,n):C(t,n):r?m(n):p(n)&#125;&quot;function&quot;&#x3D;&#x3D;typeof define&amp;&amp;define.amd?define(function()&#123;return A&#125;):&quot;object&quot;&#x3D;&#x3D;typeof module&amp;&amp;module.exports?module.exports&#x3D;A:n.md5&#x3D;A&#125;(this);</span><br><span class="line">&#x2F;&#x2F;# sourceMappingURL&#x3D;md5.min.js.map</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 <code>hexo/_config.yml</code>中增加以下内容:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#gitalk settings</span><br><span class="line">plugins:</span><br><span class="line">  gitalk:</span><br><span class="line">    enable: false</span><br><span class="line">    owner: imchenway</span><br><span class="line">    repo: imchenway.github.io</span><br><span class="line">    admin: imchenway</span><br><span class="line">    clientID: a29466c6e1aa2b1cb130</span><br><span class="line">    clientSecret: 12c4168a7d4cb01e96a1a9beb0c35d49d6c5f18b</span><br><span class="line">    distractionFreeMode: false</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h1><span id="10-集成百度统计httpsimchenwaycom20191112使用github-hexo搭建个人博客10-ji-cheng-bai-du-tong-ji">10. 集成百度统计[#]( + Hexo搭建个人博客/#10-ji-cheng-bai-du-tong-ji)</span></h1><ul>
+<li><p>1. <a href="https://tongji.baidu.com/web/10000111788/welcome/login" target="_blank" rel="noopener">注册百度统计</a></p>
+</li>
+<li><ol>
+<li>添加你的博客地址</li>
+</ol>
+</li>
+<li><ol>
+<li><p>在</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo\themes\anatole\layout\partial</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+</li>
+</ul>
+<pre><code>目录下打开
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">head.pug</span><br></pre></td></tr></table></figure>
+
+, 在末尾加上以下内容:
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">script.</span><br><span class="line">    var _hmt &#x3D; _hmt || [];</span><br><span class="line">    (function() &#123;</span><br><span class="line">        var hm &#x3D; document.createElement(&quot;script&quot;);</span><br><span class="line">        hm.src &#x3D; &quot;https:&#x2F;&#x2F;hm.baidu.com&#x2F;hm.js?542ea8c4a9ce535736e775029b1fad26&quot;;</span><br><span class="line">        var s &#x3D; document.getElementsByTagName(&quot;script&quot;)[0]; </span><br><span class="line">        s.parentNode.insertBefore(hm, s);</span><br><span class="line">    &#125;)();</span><br></pre></td></tr></table></figure></code></pre><ul>
+<li><ol>
+<li>等待20分钟后点击代码检查，显示代码安装正确即可<br><img src="../../../myhexo/source/images/006tNbRwly1g9ju6jbbdpj30uu0bkdh3-1585506203446.jpg" alt="img"></li>
+</ol>
+</li>
+</ul>
+<p><a href="https://github.com/imchenway/imchenway.github.io/issues/4" target="_blank" rel="noopener">1</a> 条评论</p>
+<p>未登录用户</p>
+<p><a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="noopener">支持 Markdown 语法</a>预览使用 GitHub 登录</p>
+<p><img src="../../../myhexo/source/images/7483890-1585506203620.png" alt="@Veitor"></p>
+<p><a href="https://github.com/Veitor" target="_blank" rel="noopener">Veitor</a>发表于4 个月前</p>
+<p>你集成gitalk的一段没写错吧？我看你本来是使用人家写的gitalk插件的，但似乎又在主题模板中重写了gitalk？</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/30/%E4%BD%BF%E7%94%A8GitHub-Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
